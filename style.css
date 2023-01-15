@@ -117,3 +117,15 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+
+@media screen and (max-width: 500px) {
+
+  
+  html {
+    font-size: 42.5%;
+    box-sizing: border-box;
+  }
+  
+  
+    }
