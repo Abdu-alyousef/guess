@@ -18,7 +18,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
-    documents.querySelector('.guess').value="";
+    documents.querySelector('.guess').textContent= '';
     
     document.querySelector('.number').textContent = secretNumber;
 
