@@ -13,7 +13,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (!guess) {
     displayMessage("Not number!!");
-    guess = "";
+const guess = Number(document.querySelector(".guess").value);
   } else if (guess === secretNumber) {
     displayMessage("Correct number :)");
     document.querySelector(".number").textContent = secretNumber;
