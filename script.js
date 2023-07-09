@@ -43,7 +43,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
-
+});
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
