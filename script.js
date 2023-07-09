@@ -9,11 +9,11 @@ const backGroundColor = function (color) {
 };
 
 document.querySelector(".check").addEventListener("click", function () {
-  const guess = Number(document.querySelector(".guess") = "";
+  const guess = Number(document.querySelector(".guess").value);
 
   if (!guess) {
     displayMessage("Not number!!");
-     Number(document.querySelector(".guess").value);
+   const guess =  Number(document.querySelector(".guess").value);
   } else if (guess === secretNumber) {
     displayMessage("Correct number :)");
     document.querySelector(".number").textContent = secretNumber;
