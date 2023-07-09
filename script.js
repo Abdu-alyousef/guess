@@ -13,6 +13,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (!guess) {
     displayMessage("Not number!!");
+    preventDefault() 
   } else if (guess === secretNumber) {
     displayMessage("Correct number :)");
     document.querySelector(".number").textContent = secretNumber;
@@ -25,6 +26,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess !== secretNumber) {
     if (score > 1) {
       displayMessage(guess > secretNumber ? "Too high :/" : "Too low :/");
+      preventDefault() 
       score--;
       document.querySelector(".score").textContent = score;
     } else {
