@@ -8,11 +8,11 @@ const displayMessage = function (message) {
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
+  preventDefault()
 
 
   // When there is no input
   if (!guess) {
-    documents.querySelector('.guess').value='';
     document.querySelector('.message').textContent = '⛔️ No number!';
     
 
