@@ -8,7 +8,7 @@ const displayMessage = function (message) {
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-  documents.querySelector('.guess').value='';
+  documents.querySelector('.guess').textContent='';
 
 
   // When there is no input
@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
-    documents.querySelector('.guess').value='';
+    documents.querySelector('.guess').textContent='';
     
     document.querySelector('.number').textContent = secretNumber;
 
